@@ -19,7 +19,7 @@ My Personal Portfolio.
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/Ashraf-7/myPortfolio)
+- Gethub Repo: [Github](https://github.com/Ashraf-7/myPortfolio)
 - Live Site URL: [Go Live](https://ashraf-7.github.io/myPortfolio/)
 
 ## My process

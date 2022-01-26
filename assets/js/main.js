@@ -367,6 +367,7 @@ window.addEventListener('contextmenu', (e) => {
   let cmWidth = contextMenu.offsetWidth;
   let cmHeight = contextMenu.offsetHeight;
 
+  // Context Submenu (Social Share)
   if (x > (vw - cmWidth - contextSubmenu.offsetWidth - 12)) {
     contextSubmenu.style.right = "100.45%";
     contextSubmenu.style.left = "auto";
@@ -375,9 +376,9 @@ window.addEventListener('contextmenu', (e) => {
     contextSubmenu.style.left = "100.45%";
   }
 
-
+  // Context Menu
   contextMenu.style.left = `${x > vw - cmWidth ? vw - cmWidth - 12: x}px`;
-  contextMenu.style.top = `${y > vh - cmHeight ? vh - cmHeight : y}px`;
+  contextMenu.style.top = `${y >= 7420 ? 7420 : y}px`;
   showContextMenu();
 });
 

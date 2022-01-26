@@ -19,8 +19,8 @@ My Personal Portfolio.
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/Ashraf-7/Social-Media-Dashboard)
-- Live Site URL: [Go Live](https://ashraf-7.github.io/Social-Media-Dashboard/)
+- Solution URL: [Solution](https://github.com/Ashraf-7/myPortfolio)
+- Live Site URL: [Go Live](https://ashraf-7.github.io/myPortfolio/)
 
 ## My process
 

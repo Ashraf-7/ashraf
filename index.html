@@ -1,0 +1,1547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal Portfolio with CV to download" />
+    <meta
+      name="keywords"
+      content="HTML5, CSS3, Responsive Design, Animating Design, JS, JavaScript, Portfolio, CV"
+    />
+    <!--==================== Mapbox ====================-->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"
+      type="text/css"
+    />
+    <!--==================== Favicon ====================-->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.webp"
+      type="image/x-icon"
+    />
+    <!--==================== Font Awesome ====================-->
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <!--==================== UNICONS ====================-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <!--==================== Google Fonts ====================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!--==================== Main CSS ====================-->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Ashraf</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container flex">
+        <a href="#" class="nav__logo flex">
+          <img
+            src="./assets/img/circle-Profile.webp"
+            alt="Ashraf Profile Image"
+          />
+          Ashraf Awad
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid flex" role="list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="uil uil-estate nav__icon"></i> home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i> about
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="uil uil-file-alt nav__icon"></i> skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">
+                <i class="uil uil-briefcase-alt nav__icon"></i> services
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i> portfolio
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact-me" class="nav__link">
+                <i class="uil uil-message nav__icon"></i> contact me
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+        <div class="nav__btns">
+          <!-- Theme Change button -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container section">
+          <div class="home__content flex">
+            <div class="home__left-col">
+              <div class="home__data">
+                <h1 class="home__title">Hello, I am a</h1>
+                <h3 class="home__subtitle flex">
+                  frontend <span>developer</span>
+                </h3>
+                <p class="home__description">
+                  I’m an Oracle Applications Developer, And Frontend Developer
+                  With a Bachelor's Degree in Computer Science, And always have
+                  a passion to learn more and improve my skills, Also I have a
+                  development plan for my future.
+                </p>
+                <a href="#contact-me" class="button button--flex">
+                  contact me <i class="uil uil-message button__icon"></i>
+                </a>
+              </div>
+              <div class="home__social flex">
+                <a
+                  href="https://www.linkedin.com/in/ashraf-awad-a27023b4/"
+                  target="_blank"
+                  title="LinkedIn"
+                  class="home__social-icon"
+                >
+                  <i class="uil uil-linkedin-alt"></i>
+                </a>
+                <a
+                  href="https://codepen.io/ashraf-7"
+                  target="_blank"
+                  title="Code Pin"
+                  class="home__social-icon"
+                >
+                  <i class="fab fa-codepen"></i>
+                </a>
+                <a
+                  href="https://github.com/Ashraf-7"
+                  target="_blank"
+                  title="GitHub"
+                  class="home__social-icon"
+                >
+                  <i class="uil uil-github-alt"></i>
+                </a>
+                <a
+                  href="https://www.freecodecamp.org/ashraf_awad"
+                  target="_blank"
+                  title="Free Code Camp"
+                  class="home__social-icon"
+                >
+                  <i class="fab fa-free-code-camp"></i>
+                </a>
+              </div>
+            </div>
+            <div class="home__img">
+              <svg
+                class="home__blob"
+                viewbox="0 0 200 187"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+        130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+        97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+        0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+        165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+        129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+        -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                  <image
+                    class="home__blob-img"
+                    x="47"
+                    y="18"
+                    href="./assets/img/Profile.webp"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
+          <a href="#about" class="home__scroll" title="Scroll Down">
+            <span class="home__scroll-cirle"></span>
+          </a>
+        </div>
+      </section>
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <h2 class="section__title">about me</h2>
+        <span class="section__subtitle">my introduction</span>
+        <div class="about__container container flex">
+          <img
+            src="./assets/img/Profile.webp"
+            alt="Abshraf Image"
+            class="about__img"
+          />
+          <div class="about__data flex">
+            <p class="about__description">
+              Software Developer, with extensive knowledge and years of
+              experience, working in web Technologies and Database.
+            </p>
+            <div class="about__info flex">
+              <div class="about__info-item">
+                <span class="about__info-title">01+</span>
+                <span class="about__info-name">years<br />experience</span>
+              </div>
+              <div class="about__info-item">
+                <span class="about__info-title">15+</span>
+                <span class="about__info-name">completed<br />projects</span>
+              </div>
+              <div class="about__info-item">
+                <span class="about__info-title">01+</span>
+                <span class="about__info-name">companies<br />worked</span>
+              </div>
+            </div>
+            <div class="about__buttons">
+              <a
+                href="./assets/pdf/Ashraf-CV.pdf"
+                class="button button--flex"
+                title="Ashraf CV"
+                download="Ashraf-CV"
+              >
+                Download CV <i class="uil uil-download-alt button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--==================== SKILLS ====================-->
+      <section class="skills section white-bg" id="skills">
+        <h2 class="section__title">skills</h2>
+        <span class="section__subtitle">my technical skills</span>
+        <div class="skills__container container grid">
+          <!--==================== SKILLS 1 ====================-->
+          <div class="skills__content skills__open">
+            <div class="skills__header flex">
+              <i class="uil uil-brackets-curly skills__icon"></i>
+              <div>
+                <h1 class="skills__title">frontend developer</h1>
+                <span class="skills__subtitle">more than 1 year</span>
+              </div>
+              <i class="uil uil-angle-up skills__arrow"></i>
+            </div>
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">HTML</h3>
+                  <span class="skills__number">80%</span>
+                </div>
+                <div class="skills__progress">
+                  <span
+                    class="skills__percentage skills__html"
+                    style="width: 0"
+                    data-width="80%"
+                  ></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">CSS</h3>
+                  <span class="skills__number">70%</span>
+                </div>
+                <div class="skills__progress">
+                  <span
+                    class="skills__percentage skills__css"
+                    style="width: 0"
+                    data-width="70%"
+                  ></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">JavaScript</h3>
+                  <span class="skills__number">60%</span>
+                </div>
+                <div class="skills__progress">
+                  <span
+                    class="skills__percentage skills__js"
+                    style="width: 0"
+                    data-width="60%"
+                  ></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">React</h3>
+                  <span class="skills__number">20%</span>
+                </div>
+                <div class="skills__progress">
+                  <span
+                    class="skills__percentage skills__react"
+                    style="width: 0"
+                    data-width="20%"
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--==================== SKILLS 2 ====================-->
+          <div class="skills__content skills__close">
+            <div class="skills__header flex">
+              <i class="uil uil-server-network skills__icon"></i>
+              <div>
+                <h1 class="skills__title">backend developer</h1>
+                <span class="skills__subtitle">less than 1 year</span>
+              </div>
+              <i class="uil uil-angle-up skills__arrow"></i>
+            </div>
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">PHP</h3>
+                  <span class="skills__number">10%</span>
+                </div>
+                <div class="skills__progress">
+                  <span
+                    class="skills__percentage skills__php"
+                    style="width: 0"
+                    data-width="10%"
+                  ></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">node js</h3>
+                  <span class="skills__number">20%</span>
+                </div>
+                <div class="skills__progress">
+                  <span
+                    class="skills__percentage skills__node"
+                    style="width: 0"
+                    data-width="20%"
+                  ></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">database</h3>
+                  <span class="skills__number">60%</span>
+                </div>
+                <div class="skills__progress">
+                  <span
+                    class="skills__percentage skills__database"
+                    style="width: 0"
+                    data-width="60%"
+                  ></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">python</h3>
+                  <span class="skills__number">20%</span>
+                </div>
+                <div class="skills__progress">
+                  <span
+                    class="skills__percentage skills__python"
+                    style="width: 0"
+                    data-width="20%"
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--==================== SKILLS 3 ====================-->
+          <div class="skills__content skills__close">
+            <div class="skills__header flex">
+              <i class="uil uil-edit-alt skills__icon"></i>
+              <div>
+                <h1 class="skills__title">apex developer</h1>
+                <span class="skills__subtitle">more than 1 year</span>
+              </div>
+              <i class="uil uil-angle-up skills__arrow"></i>
+            </div>
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">oracle database</h3>
+                  <span class="skills__number">80%</span>
+                </div>
+                <div class="skills__progress">
+                  <span
+                    class="skills__percentage skills__oracledb"
+                    style="width: 0"
+                    data-width="80%"
+                  ></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">oracle apex</h3>
+                  <span class="skills__number">70%</span>
+                </div>
+                <div class="skills__progress">
+                  <span
+                    class="skills__percentage skills__apex"
+                    style="width: 0"
+                    data-width="70%"
+                  ></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">SQL</h3>
+                  <span class="skills__number">70%</span>
+                </div>
+                <div class="skills__progress">
+                  <span
+                    class="skills__percentage skills__sql"
+                    style="width: 0"
+                    data-width="70%"
+                  ></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">PL/SQL</h3>
+                  <span class="skills__number">60%</span>
+                </div>
+                <div class="skills__progress">
+                  <span
+                    class="skills__percentage skills__pl"
+                    style="width: 0"
+                    data-width="60%"
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--==================== SKILLS Gallary ====================-->
+        <div class="skills__gallary container grid">
+          <!-- <img src="./assets/img/html-5.webp" alt="HTML5" /> -->
+          <div class="center"><i class="fab fa-html5"></i></div>
+          <div class="center"><i class="fab fa-css3"></i></div>
+          <div class="center"><i class="fab fa-sass"></i></div>
+          <div class="center"><i class="fab fa-js-square"></i></div>
+          <div class="center"><i class="fab fa-git-alt"></i></div>
+          <div class="center"><i class="fab fa-github-square"></i></div>
+          <div class="center"><i class="fas fa-database"></i></div>
+          <div class="center">
+            <img src="./assets/img/apex-logo.svg" alt="Oracle Apex Logo" />
+          </div>
+        </div>
+      </section>
+      <!--==================== QUALIFICATION ====================-->
+      <section class="qualification section">
+        <h2 class="section__title">qualification</h2>
+        <span class="section__subtitle">my personal joureny</span>
+        <div class="qualification__container container">
+          <div class="qualification__tabs flex">
+            <div
+              class="qualification__button button--flex qualification__active"
+              data-target="#education"
+            >
+              <i class="uil uil-graduation-cap qualification__icon"></i>
+              education
+            </div>
+            <div class="qualification__button button--flex" data-target="#work">
+              <i class="uil uil-briefcase-alt qualification__icon"></i>
+              work
+            </div>
+          </div>
+          <div class="qualification__sections">
+            <!--==================== QUALIFICATION content 1 ====================-->
+            <div
+              class="qualification__content qualification__active"
+              data-content
+              id="education"
+            >
+              <!--==================== QUALIFICATION 1 ====================-->
+              <div class="qualification__data grid">
+                <div class="jc-end">
+                  <h3 class="qualification__title">computer science</h3>
+                  <span class="qualification__subtitle">MUST university</span>
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>
+                    2014 - 2019
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+              <!--==================== QUALIFICATION 2 ====================-->
+              <div class="qualification__data grid">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+                <div>
+                  <h3 class="qualification__title">oracle database</h3>
+                  <span class="qualification__subtitle">global academy</span>
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>
+                    2019 - 2020
+                  </div>
+                </div>
+              </div>
+              <!--==================== QUALIFICATION 3 ====================-->
+              <div class="qualification__data grid">
+                <div class="jc-end">
+                  <h3 class="qualification__title">web development</h3>
+                  <span class="qualification__subtitle">udacity</span>
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>
+                    2021 - 2021
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+              <!--==================== QUALIFICATION 4 ====================-->
+              <div class="qualification__data grid">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <!-- <span class="qualification__line"></span> -->
+                </div>
+                <div>
+                  <h3 class="qualification__title">Oracle Apex</h3>
+                  <span class="qualification__subtitle"
+                    >Oracle Documentation</span
+                  >
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>
+                    2021 - 2021
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--==================== QUALIFICATION content 2 ====================-->
+            <div class="qualification__content" data-content id="work">
+              <!--==================== QUALIFICATION 1 ====================-->
+              <div class="qualification__data grid">
+                <div class="jc-end">
+                  <h3 class="qualification__title">Oracle Apex</h3>
+                  <span class="qualification__subtitle">Al-Majd Network</span>
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>
+                    2021 - present
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+              <!--==================== QUALIFICATION 2 ====================-->
+              <div class="qualification__data grid">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+                <div>
+                  <h3 class="qualification__title">frontend developer</h3>
+                  <span class="qualification__subtitle">freelance</span>
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>
+                    2021 - present
+                  </div>
+                </div>
+              </div>
+              <!--==================== QUALIFICATION 3 ====================-->
+              <div class="qualification__data grid">
+                <div class="jc-end">
+                  <h3 class="qualification__title">oracle apex</h3>
+                  <span class="qualification__subtitle">freelance</span>
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>
+                    2021 - present
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <!-- <span class="qualification__line"></span> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+        <h2 class="section__title">services</h2>
+        <span class="section__subtitle">what i offer</span>
+        <div class="services__container container grid">
+          <!--==================== SERVICES 1 ====================-->
+          <div class="services__content">
+            <div>
+              <i class="uil uil-arrow services__icon"></i>
+              <h3 class="services__title">
+                frontend <br />
+                developer
+              </h3>
+            </div>
+            <span
+              data-target="#frontend"
+              class="button button--flex button--smal button--link services__button"
+            >
+              view more
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+            <!-- Services Modal-Page -->
+            <div id="frontend" class="services__modal center">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title">frontend developer</h4>
+                <i class="uil uil-times services__modal-close"></i>
+                <ul class="services__modal-services grid" role="list">
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>I develop the user interface.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Web pages development.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>I create elements interactions.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>I position your company brand.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--==================== SERVICES 2 ====================-->
+          <div class="services__content">
+            <div>
+              <i class="uil uil-edit services__icon"></i>
+              <h3 class="services__title">
+                oracle apex <br />
+                developer
+              </h3>
+            </div>
+            <span
+              data-target="#apex"
+              class="button button--flex button--smal button--link services__button"
+            >
+              view more
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+            <!-- Services Modal-Page -->
+            <div id="apex" class="services__modal center">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title">oracle apex developer</h4>
+                <i class="uil uil-times services__modal-close"></i>
+                <ul class="services__modal-services grid" role="list">
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>I develop the user interface.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Web Application pages development.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>I create Reports and Charts</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>I deal with Database.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--==================== SERVICES 3 ====================-->
+          <div class="services__content">
+            <div>
+              <i class="uil uil-database services__icon"></i>
+              <h3 class="services__title">database developer</h3>
+            </div>
+            <span
+              data-target="#database"
+              class="button button--flex button--smal button--link services__button"
+            >
+              view more
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+            <!-- Services Modal-Page -->
+            <div id="database" class="services__modal center">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title">database developer</h4>
+                <i class="uil uil-times services__modal-close"></i>
+                <ul class="services__modal-services grid" role="list">
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>I build the Reports and Charts.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Using SQL and PL/SQL.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>I create Aggregation Functions.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>I create Process and Triggers.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--==================== PORTFOLIO ====================-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">portfolio</h2>
+        <span class="section__subtitle">most recent work</span>
+        <div class="portfolio__container container grid">
+          <!--==================== PORTFOLIO 1 ====================-->
+          <div class="portfolio__content">
+            <img
+              src="./assets/img/portfolio-01.webp"
+              alt="Form with Validation"
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Form with Validation</h3>
+              <p class="portfolio__description">
+                Form with Validation adaptable to all devices, with ui
+                components and animated interactions.
+              </p>
+              <a
+                href="https://ashraf-7.github.io/JavaScript-Login-Validation/"
+                class="button button--flex button--small portfolio__button"
+                target="_blank"
+              >
+                view live
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+          </div>
+          <!--==================== PORTFOLIO 2 ====================-->
+          <div class="portfolio__content">
+            <img
+              src="./assets/img/portfolio-02.webp"
+              alt="Animated Login Form"
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Animated Login Form</h3>
+              <p class="portfolio__description">
+                Animated Login Form adaptable to all devices, with Background
+                Color Switcher.
+              </p>
+              <a
+                href="https://ashraf-7.github.io/Login-Form/"
+                class="button button--flex button--small portfolio__button"
+                target="_blank"
+              >
+                view live
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+          </div>
+          <!--==================== PORTFOLIO 3 ====================-->
+          <div class="portfolio__content">
+            <img
+              src="./assets/img/portfolio-03.webp"
+              alt="Book List"
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Book List</h3>
+              <p class="portfolio__description">
+                Book List to Add, Delete and Search for Books, adaptable to all
+                devices, with Hover Effect.
+              </p>
+              <a
+                href="https://ashraf-7.github.io/Book-List/"
+                class="button button--flex button--small portfolio__button"
+                target="_blank"
+              >
+                view live
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+          </div>
+          <!--==================== PORTFOLIO 4 ====================-->
+          <div class="portfolio__content">
+            <img
+              src="./assets/img/portfolio-04.webp"
+              alt="Articles Section"
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Articles Section</h3>
+              <p class="portfolio__description">
+                Grid Articles Section, adaptable to all devices, with ui
+                components and animated interactions.
+              </p>
+              <a
+                href="https://ashraf-7.github.io/Elsite/#articles"
+                class="button button--flex button--small portfolio__button"
+                target="_blank"
+              >
+                view live
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+          </div>
+          <!--==================== PORTFOLIO 5 ====================-->
+          <div class="portfolio__content">
+            <img
+              src="./assets/img/portfolio-05.webp"
+              alt="Website Template"
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Elsite</h3>
+              <p class="portfolio__description">
+                Responsive Website adaptable to all devices, with ui components
+                and animated interactions.
+              </p>
+              <a
+                href="https://ashraf-7.github.io/Elsite/"
+                class="button button--flex button--small portfolio__button"
+                target="_blank"
+              >
+                view live
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+          </div>
+          <!--==================== PORTFOLIO 6 ====================-->
+          <div class="portfolio__content">
+            <img
+              src="./assets/img/portfolio-06.webp"
+              alt="Website Template"
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Website Template</h3>
+              <p class="portfolio__description">
+                Responsive Website adaptable to all devices, with ui components
+                and animated interactions.
+              </p>
+              <a
+                href="https://ashraf-7.github.io/HTML_CSS-Template_1/"
+                class="button button--flex button--small portfolio__button"
+                target="_blank"
+              >
+                view live
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+          </div>
+          <!--==================== PORTFOLIO 7 ====================-->
+          <div class="portfolio__content">
+            <img
+              src="./assets/img/portfolio-07.webp"
+              alt="Website Template"
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Website Template</h3>
+              <p class="portfolio__description">
+                Responsive Website adaptable to all devices, with ui components
+                and animated interactions.
+              </p>
+              <a
+                href="https://ashraf-7.github.io/HTML_CSS-Template_2/"
+                class="button button--flex button--small portfolio__button"
+                target="_blank"
+              >
+                view live
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+          </div>
+          <!--==================== PORTFOLIO 8 ====================-->
+          <div class="portfolio__content">
+            <img
+              src="./assets/img/portfolio-08.webp"
+              alt="Website Template"
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Website Template</h3>
+              <p class="portfolio__description">
+                Responsive Website adaptable to all devices, with ui components
+                and animated interactions.
+              </p>
+              <a
+                href="https://ashraf-7.github.io/HTML_CSS-Template_3/"
+                class="button button--flex button--small portfolio__button"
+                target="_blank"
+              >
+                view live
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+          </div>
+          <!--==================== PORTFOLIO 9 ====================-->
+          <div class="portfolio__content">
+            <img
+              src="./assets/img/portfolio-09.webp"
+              alt="Social Media Dashboard"
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Social Media Dashboard</h3>
+              <p class="portfolio__description">
+                Responsive Social Dashboard, with Dark Theme Switcher.
+              </p>
+              <a
+                href="https://ashraf-7.github.io/Social-Media-Dashboard/"
+                class="button button--flex button--small portfolio__button"
+                target="_blank"
+              >
+                view live
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+          </div>
+          <!--==================== PORTFOLIO 10 ====================-->
+          <div class="portfolio__content">
+            <img
+              src="./assets/img/portfolio-10.webp"
+              alt="Social Proof Section"
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Social Proof</h3>
+              <p class="portfolio__description">
+                Responsive Social Proof Section adaptable to all devices.
+              </p>
+              <a
+                href="https://ashraf-7.github.io/Social-Proof-Section/"
+                class="button button--flex button--small portfolio__button"
+                target="_blank"
+              >
+                view live
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+          </div>
+          <!--==================== PORTFOLIO 11 ====================-->
+          <div class="portfolio__content">
+            <img
+              src="./assets/img/portfolio-11.webp"
+              alt="Testimonial Grid Section"
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Testimonial Grid</h3>
+              <p class="portfolio__description">
+                Responsive Testimonial Grid Section adaptable to all devices.
+              </p>
+              <a
+                href="https://ashraf-7.github.io/Testimonial-Grid-Section/"
+                class="button button--flex button--small portfolio__button"
+                target="_blank"
+              >
+                view live
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+          </div>
+          <!--==================== PORTFOLIO 12 ====================-->
+          <div class="portfolio__content">
+            <img
+              src="./assets/img/portfolio-12.webp"
+              alt="Four Cards Section"
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Four Cards</h3>
+              <p class="portfolio__description">
+                Responsive Cards adaptable to all devices, with Hover Effect.
+              </p>
+              <a
+                href="https://ashraf-7.github.io/Four-Cards-Feature-Section/"
+                class="button button--flex button--small portfolio__button"
+                target="_blank"
+              >
+                view live
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--==================== CONTACT ME ====================-->
+      <section class="contact section" id="contact-me">
+        <h2 class="section__title">contact me</h2>
+        <span class="section__subtitle">get in touch</span>
+        <!-- =========== Contact Info =========== -->
+        <div class="contact__info container flex">
+          <div class="contact__info-item flex">
+            <i class="uil uil-map-marker contact__icon"></i>
+            <div>
+              <h3 class="contact__title">Address</h3>
+              <span class="contact__subtitle"
+                >6<sup>th</sup> of October - Jizah</span
+              >
+            </div>
+          </div>
+          <div class="contact__info-item flex">
+            <i class="uil uil-envelope contact__icon"></i>
+            <div>
+              <h3 class="contact__title">Email</h3>
+              <span class="contact__subtitle">ashrafawad2@gmail.com</span>
+            </div>
+          </div>
+          <div class="contact__info-item flex">
+            <i class="uil uil-phone contact__icon"></i>
+            <div>
+              <h3 class="contact__title">phone</h3>
+              <span class="contact__subtitle">+201005577932</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact__container container flex">
+          <!-- =========== mapbox =========== -->
+          <div id="map" class="map"></div>
+          <!-- =========== Contact Form ===========-->
+          <form action="" class="contact__form">
+            <div class="contact__inputs">
+              <div class="contact__content">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  class="contact__input"
+                />
+              </div>
+              <div class="contact__content">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  class="contact__input"
+                />
+              </div>
+            </div>
+            <div class="contact__content">
+              <input
+                type="text"
+                name="project"
+                placeholder="Project"
+                class="contact__input"
+              />
+            </div>
+            <div class="contact__content">
+              <textarea
+                cols="0"
+                rows="7"
+                name="message"
+                placeholder="Leave a Message..."
+                class="contact__input"
+              ></textarea>
+            </div>
+            <div class="contact__submit">
+              <a
+                href="mailto:ashrafawad2@gmail.com?subject=Mail from My Portfolio"
+                class="button button--flex"
+                target="_blank"
+              >
+                send message
+                <i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!--==================== Settings Menu Aside ====================-->
+      <aside class="settings__menu" id="settingsMenu">
+        <!--==================== Settings Menu Button ====================-->
+        <button class="settings__btn center" id="settingsBtn">
+          <i class="uil uil-setting settings__icon"></i>
+        </button>
+        <!--==================== Settings Menu Content ====================-->
+        <div class="settings__content">
+          <div class="settings__header flex">
+            <i class="fas fa-wrench"></i>
+            <h2 class="settings__title">site settings</h2>
+          </div>
+          <button class="random__btn center" id="randomBtn">
+            <i class="fas fa-random random__icon"></i>
+          </button>
+          <div class="settings__body">
+            <div class="accent__clr">
+              <h3 class="settings__body-title">choose accent color:</h3>
+              <div class="accent__clt-content grid">
+                <i
+                  class="square"
+                  data-hue="4deg"
+                  style="background-color: var(--clr-1)"
+                ></i>
+                <i
+                  class="square"
+                  data-hue="340deg"
+                  style="background-color: var(--clr-2)"
+                ></i>
+                <i
+                  class="square"
+                  data-hue="291deg"
+                  style="background-color: var(--clr-3)"
+                ></i>
+                <i
+                  class="square"
+                  data-hue="262deg"
+                  style="background-color: var(--clr-4)"
+                ></i>
+                <i
+                  class="square"
+                  data-hue="231deg"
+                  style="background-color: var(--clr-5)"
+                ></i>
+                <i
+                  class="square"
+                  data-hue="207deg"
+                  style="background-color: var(--clr-6)"
+                ></i>
+                <i
+                  class="square"
+                  data-hue="199deg"
+                  style="background-color: var(--clr-7)"
+                ></i>
+                <i
+                  class="square"
+                  data-hue="187deg"
+                  style="background-color: var(--clr-8)"
+                ></i>
+                <i
+                  class="square"
+                  data-hue="174deg"
+                  data-saturation="100%"
+                  data-lightness="29%"
+                  style="background-color: var(--clr-9)"
+                ></i>
+                <i
+                  class="square"
+                  data-hue="122deg"
+                  style="background-color: var(--clr-10)"
+                ></i>
+                <i
+                  class="square"
+                  data-hue="88deg"
+                  style="background-color: var(--clr-11)"
+                ></i>
+                <i
+                  class="square"
+                  data-hue="66deg"
+                  style="background-color: var(--clr-12)"
+                ></i>
+                <i
+                  class="square"
+                  data-hue="54deg"
+                  style="background-color: var(--clr-13)"
+                ></i>
+                <i
+                  class="square"
+                  data-hue="45deg"
+                  style="background-color: var(--clr-14)"
+                ></i>
+                <i
+                  class="square"
+                  data-hue="36deg"
+                  style="background-color: var(--clr-15)"
+                ></i>
+                <i
+                  class="square"
+                  data-hue="14deg"
+                  style="background-color: var(--clr-16)"
+                ></i>
+                <i
+                  class="square"
+                  data-hue="16deg"
+                  data-saturation="25%"
+                  data-lightness="38%"
+                  style="background-color: var(--clr-17)"
+                ></i>
+                <i
+                  class="square"
+                  data-hue="0deg"
+                  data-saturation="0%"
+                  data-lightness="62%"
+                  style="background-color: var(--clr-18)"
+                ></i>
+                <i
+                  class="square"
+                  data-hue="200deg"
+                  data-saturation="18%"
+                  data-lightness="46%"
+                  style="background-color: var(--clr-19)"
+                ></i>
+              </div>
+              <button class="reset" id="reset">Reset</button>
+            </div>
+            <div class="demo__site">
+              <h3 class="settings__body-title">choose demo site:</h3>
+              <div class="demo__site-content grid">
+                <a
+                  href="https://ashraf-7.github.io/JavaScript-Login-Validation/"
+                  class="settings__img"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/aside_imgs/portfolio-01.webp"
+                    alt="Form with Validation"
+                  />
+                </a>
+                <a
+                  href="https://ashraf-7.github.io/Login-Form/"
+                  class="settings__img"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/aside_imgs/portfolio-02.webp"
+                    alt="Animated Login Form"
+                  />
+                </a>
+                <a
+                  href="https://ashraf-7.github.io/Book-List/"
+                  class="settings__img"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/Aside_imgs/portfolio-03.webp"
+                    alt="Book List"
+                  />
+                </a>
+                <a
+                  href="https://ashraf-7.github.io/Elsite/#articles"
+                  class="settings__img"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/aside_imgs/portfolio-04.webp"
+                    alt="Articles Section"
+                  />
+                </a>
+                <a
+                  href="https://ashraf-7.github.io/Elsite/"
+                  class="settings__img"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/aside_imgs/portfolio-05.webp"
+                    alt="Website Template"
+                  />
+                </a>
+                <a
+                  href="https://ashraf-7.github.io/Elsite/HTML_CSS-Template_1/"
+                  class="settings__img"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/aside_imgs/portfolio-06.webp"
+                    alt="Website Template"
+                  />
+                </a>
+                <a
+                  href="https://ashraf-7.github.io/Elsite/HTML_CSS-Template_2/"
+                  class="settings__img"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/aside_imgs/portfolio-07.webp"
+                    alt="Website Template"
+                  />
+                </a>
+                <a
+                  href="https://ashraf-7.github.io/Elsite/HTML_CSS-Template_3/"
+                  class="settings__img"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/aside_imgs/portfolio-08.webp"
+                    alt="Website Template"
+                  />
+                </a>
+                <a
+                  href="https://ashraf-7.github.io/Elsite/Social-Media-Dashboard/"
+                  class="settings__img"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/aside_imgs/portfolio-09.webp"
+                    alt="Social Media Dashboard"
+                  />
+                </a>
+                <a
+                  href="https://ashraf-7.github.io/Elsite/Social-Proof-Section/"
+                  class="settings__img"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/aside_imgs/portfolio-10.webp"
+                    alt="Social Proof Section"
+                  />
+                </a>
+                <a
+                  href="https://ashraf-7.github.io/Elsite/Testimonial-Grid-Section/"
+                  class="settings__img"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/aside_imgs/portfolio-11.webp"
+                    alt="Testimonial Grid Section"
+                  />
+                </a>
+                <a
+                  href="https://ashraf-7.github.io/Elsite/Four-Cards-Feature-Section/"
+                  class="settings__img"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/aside_imgs/portfolio-12.webp"
+                    alt="Four Cards Section"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <div>
+          <h1 class="footer__title">ashraf</h1>
+          <span class="footer__subtitle">frontend developer</span>
+          <div class="footer__socials flex">
+            <a
+              href="https://www.facebook.com/ashraf.awad.161/"
+              target="_blank"
+              class="footer__social facebook flex"
+            >
+              <i class="uil uil-facebook-f footer__icon"></i>
+            </a>
+            <a
+              href="https://twitter.com/AshRaf_5aled"
+              target="_blank"
+              class="footer__social twitter flex"
+            >
+              <i class="uil uil-twitter-alt footer__icon"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/ashraf._.5alid/"
+              target="_blank"
+              class="footer__social instagram flex"
+            >
+              <i class="uil uil-instagram footer__icon"></i>
+            </a>
+          </div>
+        </div>
+        <ul class="footer__links" role="list">
+          <h2 class="footer__title">links</h2>
+          <li>
+            <a href="#services" class="footer__link">
+              <i class="fas fa-angle-double-right"></i>
+              services
+            </a>
+          </li>
+          <li>
+            <a href="#portfolio" class="footer__link">
+              <i class="fas fa-angle-double-right"></i>
+              portfolio
+            </a>
+          </li>
+          <li>
+            <a href="#contact-me" class="footer__link">
+              <i class="fas fa-angle-double-right"></i>
+              contact
+            </a>
+          </li>
+        </ul>
+        <div class="footer__contact">
+          <h2 class="footer__title">contact</h2>
+          <div class="footer__contact-item flex">
+            <i class="fas fa-home contact__icon"></i>
+            <div>
+              <h3 class="contact__title">Address</h3>
+              <span class="contact__subtitle"
+                >6<sup>th</sup> of October - Jizah</span
+              >
+            </div>
+          </div>
+          <div class="footer__contact-item flex">
+            <i class="fas fa-envelope contact__icon"></i>
+            <div>
+              <h3 class="contact__title">Email</h3>
+              <span class="contact__subtitle">ashrafawad2@gmail.com</span>
+            </div>
+          </div>
+          <div class="footer__contact-item flex">
+            <i class="fab fa-whatsapp contact__icon"></i>
+            <div>
+              <h3 class="contact__title">phone</h3>
+              <span class="contact__subtitle">+201005577932</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__text">
+        <p class="footer__copy-right">
+          Copyright &copy; 2022 Ashraf Awad. All Rights reserved
+        </p>
+      </div>
+    </footer>
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scroll-up" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+    <!--==================== Social Panel ====================-->
+    <div class="social__panel-container" id="socialPanel">
+      <div class="social__panel flex">
+        <p class="panel__title">
+          Created with <i class="fas fa-heart"></i> by Ashraf
+        </p>
+        <button class="btn-close" id="closeBtn">
+          <i class="fas fa-times"></i>
+        </button>
+        <h4 class="panel__subtitle">Get in Touch on</h4>
+        <ul class="social__panel-list flex" role="list">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/ashraf-awad-a27023b4/"
+              target="_blank"
+              class="social__link center"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/ashraf._.5alid/"
+              target="_blank"
+              class="social__link center"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/ashraf.awad.161/"
+              target="_blank"
+              class="social__link center"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/ashraf._.5alid/"
+              target="_blank"
+              class="social__link center"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--==================== Get in Touch Button ====================-->
+    <button class="social__panel-btn" id="contactBtn">Get in Touch</button>
+    <!--==================== Context Menu ====================-->
+    <div class="context__menu" id="contextMenu">
+      <ul class="context__list" role="list">
+        <li class="context__item flex"><i class="far fa-edit"></i> edit</li>
+        <li class="context__item flex">
+          <i class="fas fa-cut"></i> cut <i class="cut">Ctrl+X</i>
+        </li>
+        <li class="context__item flex">
+          <i class="far fa-clone"></i> copy <i class="copy">Ctrl+C</i>
+        </li>
+        <li class="context__item flex">
+          <i class="fas fa-paste"></i> paste <i class="paste">Ctrl+V</i>
+        </li>
+        <li class="context__item flex">
+          <i class="far fa-trash-alt"></i> delete
+        </li>
+        <li class="context__item flex share">
+          <i class="fas fa-share-alt"></i> share
+          <i class="fas fa-angle-right"></i>
+          <div class="context__menu context__submenu" id="contextSubmenu">
+            <ul class="context__sublist" role="list">
+              <li class="context__item flex">
+                <i class="uil uil-twitter-alt"></i>
+                twitter
+              </li>
+              <li class="context__item flex">
+                <i
+                  class="uil uil-instagram"
+                  style="color: hsl(11, 90%, 61%) !important"
+                ></i>
+                instagram
+              </li>
+              <li class="context__item flex">
+                <i
+                  class="uil uil-linkedin-alt"
+                  style="color: var(--css) !important"
+                ></i>
+                linkedIn
+              </li>
+              <li class="context__item flex">
+                <i
+                  class="uil uil-facebook-f"
+                  style="color: var(--facebook) !important"
+                ></i>
+                facebook
+              </li>
+              <li class="context__item flex">
+                <i class="fab fa-telegram-plane"></i>
+                telegram
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="context__item flex">
+          <i class="fas fa-cogs"></i> settings <i class="settings">F12</i>
+        </li>
+        <li class="context__item flex">
+          <i class="fas fa-sync-alt"></i> reload <i class="reload">Ctrl+R</i>
+        </li>
+        <li class="context__item flex">
+          <i class="fas fa-sign-out-alt"></i> exit <i class="exit">Alt+F4</i>
+        </li>
+      </ul>
+    </div>
+    <!--==================== MAIN JS ====================-->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

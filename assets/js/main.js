@@ -301,9 +301,7 @@ squares.forEach((square) => {
   square.addEventListener("click", (e) => {
     const hue = e.target.dataset.hue
     root.style.setProperty("--hue", e.target.dataset.hue);
-    // console.log(hue);
-    console.log(e.target.dataset.saturation);
-    console.log(e.target.dataset.lightness);
+
     if(hue == "174deg" || hue == "16deg" || hue == "0deg" || hue == "200deg") {
       root.style.setProperty("--saturation", e.target.dataset.saturation);
       root.style.setProperty("--lightness", e.target.dataset.lightness);
@@ -337,8 +335,16 @@ const changeColor = () => {
     colorParts.push(hexCode[Math.floor(Math.random() * hexCode.length)]);
   }
   const finalColor = `#${colorParts.join("")}`;
-  
+
+  // Change Body Background Color
   document.body.style.backgroundColor = finalColor;
+
+  // Change Header and Skills Background Color Manually because of Specificity
+  let header = getElement("#header");
+  let skills = getElement("#skills");
+
+  header.style.backgroundColor = finalColor;
+  skills.style.backgroundColor = finalColor;
 }
 
 randomBtn.addEventListener("click", changeColor);
@@ -366,6 +372,7 @@ window.addEventListener('contextmenu', (e) => {
   let vh = window.innerHeight;
   let cmWidth = contextMenu.offsetWidth;
   let cmHeight = contextMenu.offsetHeight;
+  let footer = document.querySelector(".footer");
 
   // Context Submenu (Social Share)
   if (x > (vw - cmWidth - contextSubmenu.offsetWidth - 12)) {
@@ -378,7 +385,7 @@ window.addEventListener('contextmenu', (e) => {
 
   // Context Menu
   contextMenu.style.left = `${x > vw - cmWidth ? vw - cmWidth - 12: x}px`;
-  contextMenu.style.top = `${y >= 7420 ? 7420 : y}px`;
+  contextMenu.style.top = `${y >= footer.offsetTop - 30 ? footer.offsetTop - 30 : y}px`;
   showContextMenu();
 });
 
